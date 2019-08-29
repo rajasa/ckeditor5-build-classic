@@ -1,7 +1,7 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
+  "name": "ckeditor5-build-classic-plus",
   "version": "12.4.0",
-  "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor. Includes more plugins, such as Autosave, Indent, Highlight and PendingActions",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
@@ -18,7 +18,11 @@
     "collaboration",
     "collaborative",
     "real-time",
-    "framework"
+    "framework",
+    "Autosave",
+    "Indent",
+    "Highlight",
+    "PendingActions"
   ],
   "main": "./build/ckeditor.js",
   "files": [
@@ -60,13 +64,15 @@
     "node": ">=8.0.0",
     "npm": ">=5.7.1"
   },
-  "author": "CKSource (http://cksource.com/)",
+  "author": "al911, forked from CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
   "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5-build-classic.git"
+    "url": "git+https://github.com/ckeditor/ckeditor5-build-classic.git"
   },
   "scripts": {
     "build": "webpack --mode production",
@@ -86,5 +92,13 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-autosave": "^11.0.5",
+    "@ckeditor/ckeditor5-highlight": "^11.0.5",
+    "@ckeditor/ckeditor5-indent": "^10.1.0"
+  },
+  "directories": {
+    "test": "tests"
   }
 }

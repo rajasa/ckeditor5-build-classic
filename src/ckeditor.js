@@ -11,6 +11,11 @@ import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapte
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+import SuperScript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
+import SubScript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
@@ -28,7 +33,13 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
-export default class ClassicEditor extends ClassicEditorBase {}
+// Custom Plugins below.
+import Autosave from '@ckeditor/ckeditor5-autosave/src/autosave';
+import Indent from '@ckeditor/ckeditor5-indent/src/indent';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import PendingActions from '@ckeditor/ckeditor5-core/src/pendingactions';
+
+export default class ClassicEditor extends ClassicEditorBase { }
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
@@ -37,6 +48,11 @@ ClassicEditor.builtinPlugins = [
 	Autoformat,
 	Bold,
 	Italic,
+	Underline,
+	Strikethrough,
+	SuperScript,
+	SubScript,
+	Code,
 	BlockQuote,
 	CKFinder,
 	EasyImage,
@@ -52,7 +68,11 @@ ClassicEditor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	Table,
-	TableToolbar
+	TableToolbar,
+	Autosave,
+	Indent,
+	Highlight,
+	PendingActions
 ];
 
 // Editor configuration.
@@ -71,7 +91,9 @@ ClassicEditor.defaultConfig = {
 			'insertTable',
 			'mediaEmbed',
 			'undo',
-			'redo'
+			'redo',
+			'|',
+			'highlight'
 		]
 	},
 	image: {
