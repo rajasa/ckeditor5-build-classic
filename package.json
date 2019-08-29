@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-build-classic-plus",
-  "version": "12.4.0",
+  "version": "12.4.1",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor. Includes more plugins, such as Autosave, Indent, Highlight and PendingActions",
   "keywords": [
     "ckeditor5-build",
