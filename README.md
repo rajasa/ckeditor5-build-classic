@@ -12,6 +12,12 @@ The classic editor build for CKEditor 5. Read more about the [classic editor bui
 
 ![CKEditor 5 classic editor build screenshot](https://c.cksource.com/a/1/img/npm/ckeditor5-build-classic.png)
 
+## Additional Plugins
+ - Autosave
+ - Indent
+ - Highlight
+ - Pending Actions
+
 ## Documentation
 
 See:
