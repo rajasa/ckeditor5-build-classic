@@ -38,6 +38,7 @@ import Autosave from '@ckeditor/ckeditor5-autosave/src/autosave';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import PendingActions from '@ckeditor/ckeditor5-core/src/pendingactions';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
@@ -72,7 +73,8 @@ ClassicEditor.builtinPlugins = [
 	Autosave,
 	Indent,
 	Highlight,
-	PendingActions
+	PendingActions,
+	Alignment
 ];
 
 // Editor configuration.

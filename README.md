@@ -8,15 +8,46 @@ CKEditor 5 classic editor build
 [![Dependency Status](https://david-dm.org/ckeditor/ckeditor5-build-classic/status.svg)](https://david-dm.org/ckeditor/ckeditor5-build-classic)
 [![devDependency Status](https://david-dm.org/ckeditor/ckeditor5-build-classic/dev-status.svg)](https://david-dm.org/ckeditor/ckeditor5-build-classic?type=dev)
 
-The classic editor build for CKEditor 5. Read more about the [classic editor build](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/overview.html#classic-editor) and see the [demo](https://ckeditor.com/docs/ckeditor5/latest/examples/builds/classic-editor.html).
+The classic editor build for CKEditor 5. Read more about the [classic editor build](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/overview.html#classic-editor) and see the [demo](https://ckeditor.com/docs/ckeditor5/latest/examples/builds/classic-editor.html). This specific build has been adjusted to include multiple additional plugins. See [The classic editor build for CKEditor 5. Read more about the [classic editor build](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/overview.html#classic-editor) and see the [demo](https://ckeditor.com/docs/ckeditor5/latest/examples/builds/classic-editor.html).
+
+This specific build has been adjusted to use some existing plugins, plus multiple additional plugins. See [Additional Plugins](#Additional-Plugins)
 
 ![CKEditor 5 classic editor build screenshot](https://c.cksource.com/a/1/img/npm/ckeditor5-build-classic.png)
 
-## Additional Plugins
+## Enabled Default Plugins
+ - Essentials
+ - UploadAdapter
+ - Autoformat
+ - Bold
+ - Italic
+ - Underline
+ - Strikethrough
+ - SuperScript
+ - SubScript
+ - Code
+ - BlockQuote
+ - CKFinder
+ - EasyImage
+ - Heading
+ - Image
+ - ImageCaption
+ - ImageStyle
+ - ImageToolbar
+ - ImageUpload
+ - Link
+ - List
+ - MediaEmbed
+ - Paragraph
+ - PasteFromOffice
+ - Table
+ - TableToolbar
+
+## <a name="Additional-Plugins">Additional Plugins</a>
+ - Alignment
  - Autosave
- - Indent
  - Highlight
- - Pending Actions
+ - Indent
+ - PendingActions
 
 ## Documentation
 
