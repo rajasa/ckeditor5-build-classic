@@ -39,6 +39,7 @@ import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import PendingActions from '@ckeditor/ckeditor5-core/src/pendingactions';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
@@ -74,7 +75,8 @@ ClassicEditor.builtinPlugins = [
 	Indent,
 	Highlight,
 	PendingActions,
-	Alignment
+	Alignment,
+	SimpleUploadAdapter
 ];
 
 // Editor configuration.

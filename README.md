@@ -1,4 +1,4 @@
-CKEditor 5 classic editor build
+CKEditor 5 Classic Plus
 ========================================
 
 [![Join the chat at https://gitter.im/ckeditor/ckeditor5](https://badges.gitter.im/ckeditor/ckeditor5.svg)](https://gitter.im/ckeditor/ckeditor5?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -48,6 +48,7 @@ This specific build has been adjusted to use some existing plugins, plus multipl
  - Highlight
  - Indent
  - PendingActions
+ - SimpleUploadAdapter
 
 ## Documentation
 
@@ -63,7 +64,7 @@ See:
 First, install the build from npm:
 
 ```bash
-npm install --save @ckeditor/ckeditor5-build-classic
+npm install --save ckeditor5-build-classic-plus
 ```
 
 And use it in your website:
@@ -88,10 +89,10 @@ And use it in your website:
 Or in your JavaScript application:
 
 ```js
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import ClassicEditor from 'ckeditor5-build-classic-plus';
 
 // Or using the CommonJS version:
-// const ClassicEditor = require( '@ckeditor/ckeditor5-build-classic' );
+// const ClassicEditor = require( 'ckeditor5-build-classic-plus' );
 
 ClassicEditor
 	.create( document.querySelector( '#editor' ) )
