@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-build-classic-plus",
-  "version": "12.4.3",
+  "version": "12.4.4",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor. This specific build includes more plugins. See the README document for more information.",
   "keywords": [
     "ckeditor5-build",
@@ -23,8 +23,8 @@
     "Indent",
     "Highlight",
     "PendingActions",
-	"Alignment",
-	"SimpleUploadAdapter"
+    "Alignment",
+    "SimpleUploadAdapter"
   ],
   "main": "./build/ckeditor.js",
   "files": [
@@ -63,7 +63,6 @@
     "postcss-loader": "^3.0.0",
     "raw-loader": "^3.1.0",
     "style-loader": "^1.0.0",
-    "uglifyjs-webpack-plugin": "^1.3.0",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6"
   },
