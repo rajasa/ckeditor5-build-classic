@@ -36,10 +36,12 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 // Custom Plugins below.
 import Autosave from '@ckeditor/ckeditor5-autosave/src/autosave';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
+import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import PendingActions from '@ckeditor/ckeditor5-core/src/pendingactions';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
@@ -73,10 +75,12 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 	Autosave,
 	Indent,
+	IndentBlock,
 	Highlight,
 	PendingActions,
 	Alignment,
-	SimpleUploadAdapter
+	SimpleUploadAdapter,
+	Font
 ];
 
 // Editor configuration.
@@ -84,6 +88,10 @@ ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
+			'fontFamily',
+			'fontSize',
+			'fontColor',
+			'fontBackgroundColor',
 			'|',
 			'bold',
 			'italic',
@@ -97,7 +105,9 @@ ClassicEditor.defaultConfig = {
 			'undo',
 			'redo',
 			'|',
-			'highlight'
+			'highlight',
+			'indent',
+			'outdent'
 		]
 	},
 	image: {
