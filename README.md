@@ -74,7 +74,7 @@ And use it in your website:
 <div id="editor">
 	<p>This is the editor content.</p>
 </div>
-<script src="./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
+<script src="./node_modules/ckeditor5-build-classic-plus/build/ckeditor.js"></script>
 <script>
 	ClassicEditor
 		.create( document.querySelector( '#editor' ) )
