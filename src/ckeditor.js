@@ -25,6 +25,7 @@ import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
@@ -66,6 +67,7 @@ ClassicEditor.builtinPlugins = [
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
+	ImageResize,
 	Link,
 	List,
 	MediaEmbed,
@@ -87,35 +89,38 @@ ClassicEditor.builtinPlugins = [
 ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			'heading',
-			'fontFamily',
-			'fontSize',
-			'fontColor',
-			'fontBackgroundColor',
-			'|',
-			'bold',
-			'italic',
-			'link',
-			'bulletedList',
-			'numberedList',
-			'imageUpload',
-			'blockQuote',
-			'insertTable',
-			'mediaEmbed',
-			'undo',
-			'redo',
-			'|',
-			'highlight',
-			'indent',
-			'outdent'
+			'heading', 'fontFamily', 'fontSize', 'fontColor', 'fontBackgroundColor', '|',
+			'bold', 'italic', 'underline', 'strikethrough', 'subscript', 'superscript', '|',
+			'highlight', 'link', '|',
+			'blockQuote', 'alignment', '|',
+			'outdent', 'indent', 'bulletedList', 'numberedList', '|',
+			'insertTable', 'imageUpload', '|',
+			'undo', 'redo'
 		]
+	},
+	alignment: {
+		options: [ 'left', 'center', 'right', 'justify' ]
 	},
 	image: {
 		toolbar: [
 			'imageStyle:full',
-			'imageStyle:side',
+			'imageStyle:alignLeft',
+			'imageStyle:alignRight',
 			'|',
 			'imageTextAlternative'
+		],
+		styles: [
+			'full',
+			'alignLeft',
+			'alignRight'
+		]
+	},
+	heading: {
+		options: [
+			{ model: 'paragraph', title: 'Paragraph' },
+			{ model: 'heading1', view: 'h1', title: 'Heading 1' },
+			{ model: 'heading2', view: 'h2', title: 'Heading 2' },
+			{ model: 'heading3', view: 'h3', title: 'Heading 3' }
 		]
 	},
 	table: {
