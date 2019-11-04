@@ -33,6 +33,7 @@ This specific build has been adjusted to use some existing plugins, plus multipl
  - ImageStyle
  - ImageToolbar
  - ImageUpload
+ - Indent
  - Link
  - List
  - MediaEmbed
@@ -45,7 +46,6 @@ This specific build has been adjusted to use some existing plugins, plus multipl
  - Alignment
  - Autosave
  - Highlight
- - Indent
  - PendingActions
  - SimpleUploadAdapter
  - Font
