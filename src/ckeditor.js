@@ -26,6 +26,7 @@ import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
+import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
@@ -36,7 +37,6 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
 // Custom Plugins below.
 import Autosave from '@ckeditor/ckeditor5-autosave/src/autosave';
-import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import PendingActions from '@ckeditor/ckeditor5-core/src/pendingactions';
@@ -68,6 +68,7 @@ ClassicEditor.builtinPlugins = [
 	ImageToolbar,
 	ImageUpload,
 	ImageResize,
+	Indent,
 	Link,
 	List,
 	MediaEmbed,
@@ -76,7 +77,6 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	Autosave,
-	Indent,
 	IndentBlock,
 	Highlight,
 	PendingActions,
@@ -94,7 +94,7 @@ ClassicEditor.defaultConfig = {
 			'highlight', 'link', '|',
 			'blockQuote', 'alignment', '|',
 			'outdent', 'indent', 'bulletedList', 'numberedList', '|',
-			'insertTable', 'imageUpload', '|',
+			'insertTable', 'imageUpload', 'mediaEmbed', '|',
 			'undo', 'redo'
 		]
 	},
