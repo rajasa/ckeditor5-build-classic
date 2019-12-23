@@ -1,3 +1,14 @@
+**NOTE**: This fork has been discontinued, since I opted for a local version of the build. If you would like to create your own personalized local version as well, do the following steps:
+
+- Fork the ckeditor build within a folder on your project (ie. project/external)
+- In the forked directory, run `npm install`
+- Adjust the build as you would like, adding, removing and configuring your editor
+- Perform `yarn build` in the forked directory
+- Add the build to the package.json dependencies (ex: `"my-custom-build": "file:./external/ckeditor-build-classic"`)
+- In your file, import the build (ex: `import ClassicEditor from 'my-custom-build'`)
+
+You now have a local customizable version of the editor. This can also be applied to other packages, as long as you have the source code. Also, if you have the git still initialized to the upstream fork, you can always perform updates to your build whenever they are available (see [Updating the build](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/custom-builds.html#updating-the-build))
+
 CKEditor 5 Classic Plus
 ========================================
 
