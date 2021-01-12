@@ -17,6 +17,7 @@ import SuperScript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
 import SubScript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
+import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock.js';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
@@ -58,6 +59,7 @@ ClassicEditor.builtinPlugins = [
 	SuperScript,
 	SubScript,
 	Code,
+	CodeBlock,
 	BlockQuote,
 	CKFinder,
 	EasyImage,
